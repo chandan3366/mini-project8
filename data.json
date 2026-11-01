@@ -1,0 +1,38 @@
+{
+    "library_name": "Library Lending & Membership Management Backend",
+    "fine_per_overdue_day": 2,
+    "items": [
+        {
+            "type": "Book",
+            "item_id": "1001",
+            "title": "the Book",
+            "available": false
+        }
+    ],
+    "members": [
+        {
+            "type": "StudentMember",
+            "member_id": "2001",
+            "name": "akshay",
+            "borrowing_limit": 2,
+            "borrowed_item_ids": [
+                "1001"
+            ]
+        },
+        {
+            "type": "ResearchStudent",
+            "member_id": "10003",
+            "name": "chandan",
+            "borrowing_limit": 4,
+            "borrowed_item_ids": []
+        }
+    ],
+    "loans": [
+        {
+            "item_id": "1001",
+            "member_id": "2001",
+            "issue_date": "2026-11-01",
+            "due_date": "2026-11-15"
+        }
+    ]
+}
